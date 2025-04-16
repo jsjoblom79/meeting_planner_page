@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>All Rooms</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %}Rooms{% endblock %}
+{% block content %}
 <h1>We currently only have the following Meeting Rooms Available</h1>
 <ul>
   {% for room in rooms %}
@@ -14,5 +10,4 @@
   </li>
   {% endfor %}
 </ul>
-</body>
-</html>
+{% endblock %}
